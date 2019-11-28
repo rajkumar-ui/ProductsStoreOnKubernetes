@@ -20,15 +20,6 @@ The k8s objects defined in YAML files are used to deploy the app into a Kubernet
 Source: https://blog.nebrass.fr/playing-with-spring-boot-on-kubernetes/  
 
 
-	1.2) Learn more about Kubernetes architecture:
-
-<a href="https://www.youtube.com/watch?v=HJ6F05Pm5mQ">
-<img src="https://github.com/HoussemDellai/ProductsStoreOnKubernetes/blob/master/images/k8s-objects.png?raw=true" width="80%"/>
-</a>
-
-	1.3) Learn more about Kubernetes objects (Deployment I Service I ConfigMap I Secret I PersistentVolume)
-
-
 ### 2) Create docker containers  
 	
     2.1) Introduction to Dockerfile: build, run  
@@ -56,9 +47,9 @@ Source: https://blog.nebrass.fr/playing-with-spring-boot-on-kubernetes/
 ### 4) Push containers to Docker Hub  
 	
     4.1) Tag image, login, push  
-	4.2) $ docker tag mvc-app:1.0 houssemdocker/mvc-app:1.0  # use your own Docker Hub ID  
+	4.2) $ docker tag mvc-app:1.0 goldentech/mvc-app:1.0  # use your own Docker Hub ID  
 	4.3) $ docker login  
-	4.4) $ docker push houssemdocker/mvc-app:1.0  
+	4.4) $ docker push goldentech/mvc-app:1.0  
          Check your hub.docker.io
 	
 ### 5) Deploy to Kubernetes using the Dashboard  
@@ -111,26 +102,4 @@ Source: https://blog.nebrass.fr/playing-with-spring-boot-on-kubernetes/
 			  --name aks-k8s \
 			  --subscription "Microsoft Azure Sponsorship"  
 	
-### 9) Create the CI/CD pipelines for using Azure DevOps   
 
-<img src="https://github.com/HoussemDellai/ProductsStoreOnKubernetes/blob/master/images/ci-cd-aks.png?raw=true"/>
-
-	9.1) CI pipeline: builds the container and pushes it to docker hub.  
-<img src="https://github.com/HoussemDellai/ProductsStoreOnKubernetes/blob/master/images/kubernetes-ci.png?raw=true"/>
-
-	9.2) CD pipeline: deploys the YAML manifest files into Kubernetes cluster.  
-<img src="https://github.com/HoussemDellai/ProductsStoreOnKubernetes/blob/master/images/kubernetes-cd.png?raw=true"/>
-	
-### 10) Discussion points  
-scalability, health check, mounting volume, resource limits, service discovery, deploy with Helm...  
-
-### 11) More resources
-
-eShopOnContainers: https://github.com/dotnet-architecture/eShopOnContainers
-
-https://www.udemy.com/kubernetes-for-developers/
-Please email me if you want a free coupon :)  
-
-<a href="https://www.udemy.com/kubernetes-for-developers/">
-<img src="https://github.com/HoussemDellai/ProductsStoreOnKubernetes/blob/master/images/udemy-courses.png?raw=true" width="90%"/>
-</a>
