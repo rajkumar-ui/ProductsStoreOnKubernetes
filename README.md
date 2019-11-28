@@ -28,10 +28,7 @@ Source: https://blog.nebrass.fr/playing-with-spring-boot-on-kubernetes/
 
 	1.3) Learn more about Kubernetes objects (Deployment I Service I ConfigMap I Secret I PersistentVolume)
 
-<a href="https://www.youtube.com/watch?v=pR-UlYf61uA">
-<img src="https://github.com/HoussemDellai/ProductsStoreOnKubernetes/blob/master/images/k8s-explained.png?raw=true" width="80%"/>
-</a>
-	
+
 ### 2) Create docker containers  
 	
     2.1) Introduction to Dockerfile: build, run  
